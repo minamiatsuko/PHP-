@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contact</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700,900&display=swap&subset=japanese">
+
+  <link rel="stylesheet" href="form2.css">
+</head>
+<body>
+  
+  <section class="contact">
+    <div class="container">
+      
+      <!-- フォーム -->
+      <form class="wrapper" action="confirm.php" method="POST">
+        <h2>お問い合わせフォーム</h2>
+        <!-- 名前 -->
+        <p>
+          <label for="name">
+            <input type="text" id="name" name="name" placeholder="お名前">
+          </label>
+        </p>
+    
+        <!-- メールアドレス -->
+        <p>
+          <label for="email">
+            <input type="email" id="email" name="email" placeholder="メールアドレス">
+          </label>
+        </p>
+    
+        <!-- お問い合わせ内容 -->
+        <p>
+          <label for="comments">
+            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="お問い合わせ内容"></textarea>
+          </label>
+        </p>
+        
+        
+        <!-- 送信ボタン -->
+        <p><input class="btn" type="submit" value="送信する"></p>
+      </form>
+
+    </div>
+  </section>
+  
+</body>
+</html>
